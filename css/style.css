@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--body);
+}
+
+:root {
+    --body:
+        /*#202C36*/
+        #fff;
+    --h1TExts:
+        /*#fff*/
+        #2B3844;
+    --back:
+        #fff
+        /*#2B3844*/
+    ;
+    --shadow: 0px 0px 7px 2px #00000008;
+
+}
+
+.nav-bar {
+    max-width: 1440px;
+    height: 80px;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    background-color: var(--back);
+}
+
+.nav-bar h1 {
+    color: var(--h1TExts);
+    font-size: 24px;
+}
+
+.dark_lightMode {
+    width: 118px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dark_lightMode p {
+    font-size: 16px;
+    color: var(--h1TExts);
+}
+
+.dark_lightMode i {
+    font-size: 20px;
+    color: var(--h1TExts);
+}
+
+.container {
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.searchChooseBlog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.select {
+    color: var(--h1TExts);
+    width: 200px;
+    height: 56px;
+    padding: 0 15px;
+    box-shadow: var(--shadow);
+    border: none;
+    background-color: var(--back);
+
+}
+
+.select:focus {
+    outline: none;
+
+}
+
+.searchBox {
+    width: 480px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    align-items: center;
+    background-color: var(--back);
+}
+
+.searchBox .search_country {
+    width: 85%;
+    height: 100%;
+    border: none;
+    color: var(--h1TExts);
+    background-color: var(--back);
+}
+
+.search_country:focus {
+    outline: none;
+}
+
+.searchBox i {
+    width: 15%;
+    margin-left: 32px;
+    color: var(--h1TExts);
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.card {
+    border-radius: 4px;
+    width: 264px;
+    height: 336px;
+    margin-bottom: 75px;
+    box-shadow: var(--shadow);
+    background-color: var(--back);
+    color: var(--h1TExts);
+    overflow: hidden;
+}
+
+.flag {
+    width: 100%;
+    height: 170px;
+}
+
+.name {
+    font-size: 18px;
+    margin: 24px 24px 16px 24px;
+}
+
+.population,
+.region,
+.capital {
+    font-size: 14px;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+.card span {
+    font-weight: lighter;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.648);
+    position: absolute;
+    z-index: 65541;
+    color: white;
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal img {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-bar {
+        max-width: 490px;
+        height: 80px;
+    }
+
+    .nav-bar h1 {
+        font-size: 18px;
+    }
+
+    .dark_lightMode p {
+        font-size: 15px;
+    }
+
+    .dark_lightMode i {
+        font-size: 15px;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 48px;
+    }
+
+    .card {
+        border-radius: 4px;
+        width: 90%;
+        height: 346px;
+        margin-bottom: 45px;
+        overflow: hidden;
+    }
+    .searchBox {
+        width: 60%;
+        height: 56px;
+    }
+    .select{
+        width: 35%;
+    }
+}
